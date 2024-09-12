@@ -1,0 +1,47 @@
+/* Media-Query for desktops */
+
+:root {
+    /* Colors */
+    --white: #ffffff;
+    --bg: #f9eeff;
+    --color01: #f9f0ff;
+    --color02: #8c6991;
+}
+   
+@media screen and (min-width: 1200px){
+    body {
+        background: url(../images/background-pattern-desktop.svg) top center repeat-x;
+        background-color: var(--bg);
+    }
+
+    article {
+        margin-top: 11rem;
+        width: 600px;
+        padding: 40px 40px 0 40px;
+    }
+    
+    header {
+        margin-bottom: 15px;
+    }
+
+    .accordion {
+        grid-template-columns: 18fr 1fr
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 17px;
+        width: auto;
+    }
+
+    .star-icon {
+        width: 35px;
+    }
+
+    p {
+        width: 505px;
+    }
+}

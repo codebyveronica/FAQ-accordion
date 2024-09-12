@@ -3,10 +3,13 @@
 :root {
     /* Colors */
     --white: #ffffff;
+    --bg: #f9eeff;
     --color01: #f9f0ff;
     --color02: #8c6991;
     --color03: #2f1533;
 }
+
+/* Mobile first with general style */
 
 * {
     padding: 0px;
@@ -17,8 +20,8 @@
 }
 
 body {
-    background: url(images/background-pattern-mobile.svg) top center repeat-x;
-    background-color: var(--color01);
+    background: url(../images/background-pattern-mobile.svg) top center repeat-x;
+    background-color: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,12 +51,12 @@ h1 {
 
 .accordion {
     display: grid;
-    grid-column-gap: 40px;
-    grid-template-columns: 3f 1f;
+    grid-template-columns: 8fr 1fr;
     border-bottom: 1px solid var(--color01);
 }
 
 .last {
+    position: relative;
     border-bottom: none;
 }
 
@@ -67,6 +70,7 @@ h2 {
 }
 
 button {
+    width: 30px;
     grid-column: 2;
     grid-row: 1;
     background-color: transparent;
@@ -75,7 +79,7 @@ button {
 }
 
 .plus-minus {
-    position: relative;
+    float: inline-end;
     pointer-events: none;
 }
 
