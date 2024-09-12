@@ -17,7 +17,7 @@
     article {
         margin-top: 11rem;
         width: 600px;
-        padding: 40px 40px 0 40px;
+        padding: 40px 40px 20px 40px;
     }
     
     header {
@@ -44,5 +44,6 @@
     p {
         width: 505px;
         font-size: 15.5px;
+        line-height: 24px;
     }
 }
