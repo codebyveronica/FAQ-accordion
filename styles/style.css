@@ -18,8 +18,7 @@
 
 body {
     background: url(images/background-pattern-mobile.svg) top center repeat-x;
-    background-size: contain;
-    background-color: var(--color02);
+    background-color: var(--color01);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +27,7 @@ body {
 article {
     background-color: white;
     width: 340px;
-    padding: 20px;
+    padding: 25px 25px 0 25px;
     margin-top: 10rem;
     border-radius: 10px;
 }
@@ -48,22 +47,28 @@ h1 {
 }
 
 .accordion {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 3f 1f;
     border-bottom: 1px solid var(--color01);
 }
 
-.question {
-    display: flex;
-    justify-content: space-between;
+.last {
+    border-bottom: none;
 }
 
 h2 {
+    grid-column: 1;
+    grid-row: 1;
     color: var(--color03);
     width: 225px;
     font-size: 16px;
-    margin-top: 25px;
+    margin: 25px 0;
 }
 
 button {
+    grid-column: 2;
+    grid-row: 1;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -71,13 +76,15 @@ button {
 
 .plus-minus {
     position: relative;
-    top: 11px;
     pointer-events: none;
 }
 
 p {
+    grid-column: 1/3;
+    grid-row: 2;
     color: var(--color02);
-    margin: 25px 0;
+    width: 290px;
+    margin-bottom: 25px;
 }
 
 .hide {
