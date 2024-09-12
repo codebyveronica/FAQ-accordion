@@ -29,19 +29,20 @@
     }
 
     h1 {
-        font-size: 3.5em;
+        font-size: 3.6em;
     }
 
     h2 {
-        font-size: 17px;
+        font-size: 18px;
         width: auto;
     }
 
     .star-icon {
-        width: 35px;
+        width: 40px;
     }
 
     p {
         width: 505px;
+        font-size: 15.5px;
     }
 }
