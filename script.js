@@ -1,19 +1,21 @@
-const buttons = document.querySelectorAll("#btn");
-let isFirstImage = true;
+const buttons = document.querySelectorAll("[data-btn-id=btn]");
 
 function handleClick(e) {
     const btnClicked = e.target;
-    const btnIconPlus = btnClicked.querySelectorAll("#icon")[0];
-    const btnIconMinus = btnClicked.querySelectorAll("#icon")[1];
-    const btnParent = btnClicked.closest("div");
-    const reply = btnParent.querySelector("#reply");
+    const img = btnClicked.querySelectorAll("img");
 
-    btnIconPlus.classList.toggle("hide");
-    btnIconMinus.classList.toggle("hide");
+    if(img.getAttribute("src") == "images/icon-plus.svg") {
+        img.getAttribute("src", "images/icon-minus.svg");
+    } else {
+        img.getAttribute("src", "images/icon-plus.svg");
+    }
+
+    const btnParent = btnClicked.parentNode;
+    const reply = btnParent.querySelector("[data-reply]")
 
     reply.classList.toggle("hide");
 }
 
 buttons.forEach(button => {
     button.addEventListener("click", handleClick);
-});
+})

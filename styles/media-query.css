@@ -7,6 +7,14 @@
     --color01: #f9f0ff;
     --color02: #8c6991;
 }
+
+@media screen and (min-width: 376px){
+    body {
+        background: url(../images/background-pattern-desktop.svg) top center repeat-x;
+        background-color: var(--bg);
+        padding-bottom: 20px;
+    }
+}
    
 @media screen and (min-width: 1200px){
     body {

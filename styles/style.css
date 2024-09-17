@@ -20,7 +20,7 @@
 }
 
 body {
-    background: url(../images/background-pattern-mobile.svg) top center repeat-x;
+    background: url(../images/background-pattern-mobile.svg) top center no-repeat;
     background-color: var(--bg);
     display: flex;
     align-items: center;
