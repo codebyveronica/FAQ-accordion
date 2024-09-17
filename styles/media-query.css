@@ -12,7 +12,6 @@
     body {
         background: url(../images/background-pattern-desktop.svg) top center repeat-x;
         background-color: var(--bg);
-        padding-bottom: 20px;
     }
 }
    
